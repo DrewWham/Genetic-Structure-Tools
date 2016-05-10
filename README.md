@@ -10,22 +10,21 @@ Here you will find a couple of functions that are useful for plotting the result
 
 Lets start by turning the ugly STRUCTURE outfile into a clean .csv file
 
-'read.STR("All Glynnii.txt","No Add Inf Lamb Final_run_10_f")'
+`>read.STR("All Glynnii.txt","No Add Inf Lamb Final_run_10_f")`
 
 Now check your folder and you chould have a file called "k4.csv", or if your running this on your own data it will be "kx.csv" where x= the k value you used. 
 
 If this file is in the order that you would like you are all set, if not you can reorder the file any way that you would like and then save it as "Order.csv", just be sure to keep your original "k4.csv" as well.
 
 Now you can plot with:
-...
-'plotSTR("k4.csv")'
-...
+
+`>plotSTR("k4.csv")`
 
 or if you reordered the file you will use:
 
-'plotSTR("k4.csv",Order.csv="Order.csv")'
+`>plotSTR("k4.csv",Order.csv="Order.csv")`
 
-This should output this .pdf
+This should output the above .pdf
 
 
 
