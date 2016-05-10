@@ -12,7 +12,7 @@ Lets start by turning the ugly STRUCTURE outfile into a clean .csv file
 
 `>read.STR("All Glynnii.txt","No Add Inf Lamb Final_run_10_f")`
 
-Now check your folder and you chould have a file called "k4.csv", or if your running this on your own data it will be "kx.csv" where x= the k value you used. 
+Now check your folder and you should have a file called "k4.csv", or if your running this on your own data it will be "kx.csv" where x= the k value you used. 
 
 If this file is in the order that you would like you are all set, if not you can reorder the file any way that you would like and then save it as "Order.csv", just be sure to keep your original "k4.csv" as well.
 
