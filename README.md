@@ -3,7 +3,11 @@ R Functions for plotting and working with STRUCTURE files
 
 <img src="https://static1.squarespace.com/static/54ad6922e4b0ab38fefa18b1/t/57323b9a27d4bdb26406fc50/1462909877175/K%3D4+Plot?format=750w"> 
 
-Here you will find a couple of functions that are useful for plotting the results of STRUCTURE in R. Just download the "STRplot.r" file and open R. Set your working directory to your Results folder from your STRUCTURE run and also put your .txt formated STRUCTURE infile in this directory. You can then run Source("STRplot.r") and you will now be able to run the two functions you need. 
+Here you will find a couple of functions that are useful for plotting the results of STRUCTURE in R. Just download the "STRplot.r" file and open R. Set your working directory to your Results folder from your STRUCTURE run and also put your .txt formated STRUCTURE infile in this directory.
+
+You can then run:
+
+`>source("STRplot.r")`
 
 ## Getting Started
 * If you are running this on your own data you are now ready to go. If not, I have provided some example files, just download these to a single directory and you should be able to work with these files
