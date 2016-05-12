@@ -26,7 +26,7 @@ Now you can plot with:
 
 or if you reordered the file you will use:
 
-`>plotSTR("k4.csv",Order.csv="Order.csv")`
+`>plotSTR("k4.csv",order="Order.csv")`
 
 This should output the above .pdf
 
