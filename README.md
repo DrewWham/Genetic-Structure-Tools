@@ -7,7 +7,7 @@ Here you will find a couple of functions that are useful for plotting the result
 
 You can then run:
 
-`>source("STRplot.r")`
+`>source("plotSTR.r")`
 
 ## Getting Started
 * If you are running this on your own data you are now ready to go. If not, I have provided some example files, just download these to a single directory and you should be able to work with these files
