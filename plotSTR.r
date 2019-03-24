@@ -1,5 +1,6 @@
 library(stringr)
 library(ggplot2)
+library(data.table)
 
 #function for extracting the cluster Probs, requires STR infile because STRUCTURE likes to chop off the ends of your sample names so I have to use your original file to get your original names
 read.STR<-function(STR.in,STR.out){
