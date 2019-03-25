@@ -12,14 +12,22 @@ q.tab.id <- grep("Inferred ancestry of individuals:",str.out,
 						 value=FALSE)
 num.ind <- grep("Run parameters:",str.out,
 						 value=FALSE)+1
+k.ind<-grep("populations assumed",str.out,
+            value=FALSE)
+k<-str.out[k.ind]
+k<-as.numeric(str_extract_all(k,"[0-9.A-Za-z_]+")[[1]][1])
+
 num.ind<-str.out[num.ind]	 				 
 num.ind<-as.numeric(str_extract_all(num.ind,"[0-9.A-Za-z_]+")[[1]][1])
 q.end.id<-1+num.ind+q.tab.id		
 q.tab<-str.out[(q.tab.id+2):q.end.id]
 qs<-t(sapply(str_extract_all(q.tab,"[0-9.A-Za-z_]+"),as.character))
-qs<-qs[,c(2,5:dim(qs)[2])]
+
+cols_qs<-dim(qs)[2]
+
+qs<-qs[,c(2,(cols_qs-k+1):(cols_qs))]
 qs<-data.frame(qs)
-nclust<- dim(qs)[2]-1
+nclust<- k
 #this part replaces the names with your original names
  qs[,1]<-str[,1]
 write.csv(qs,paste("k",nclust,".csv",sep=""),row.names=F)
